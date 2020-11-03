@@ -54,19 +54,23 @@ Back to the script, you will need to create a reference to the RigidBody 2D up a
 
 - The next step will be to move the **EnemyObject** to move towards the player. At the top of the script insert a **Vector2** called **Movement**. Under the **UpdateFunction** set the **movement to equal direction** . Without complicated formulas we can just write, **direction.normalise**. 
 Now we know where the enemy will move, we will create a function called **moveCharacter**. 
+   
+        private void FixedUpdate()
+       {
+       moveCharacter(movement);
+       }
+       void moveCharacter(Vector2 direction)
+       {
+       rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
+       }
 
 
 
 
-      private void FixedUpdate()
-    {
-        moveCharacter(movement);
-    }
-    void moveCharacter(Vector2 direction)
-    {
-        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
-    }
-}
+
+
+
+      
 
 
 
