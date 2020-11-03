@@ -22,10 +22,10 @@ Back to the script, you will need to create a reference to the RigidBody 2D up a
    
         void Start()
      
-    {
+       {
     
         rb = this.GetComponent<Rigidbody2D>();
-    }
+       }
 
 
 
