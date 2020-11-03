@@ -55,19 +55,35 @@ Back to the script, you will need to create a reference to the RigidBody 2D up a
 - The next step will be to move the **EnemyObject** to move towards the player. At the top of the script insert a **Vector2** called **Movement**. Under the **UpdateFunction** set the **movement to equal direction** . Without complicated formulas we can just write, **direction.normalise**. 
 Now we know where the enemy will move, we will create a function called **moveCharacter**. 
    
-        private void FixedUpdate()
-       {
-       moveCharacter(movement);
-       }
+        
        void moveCharacter(Vector2 direction)
        {
        rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
        }
 
 
+-What this does is it takes the current **position and moves it in the direction that we specified** which happens to be the direction of the **PlayerObject**. To control the move speed of the movement we need to define it at the top. 
+Insert a **public flow move speed that equals to five**, this can be **altered** to make the enemy move faster or slower. 
 
 
+       public class Enemy : MonoBehaviour
+       {
+       public Transform player;
+       public float moveSpeed = 5f;
+       private Rigidbody2D rb;
+       private Vector2 movement;
 
+
+-The last step we need to do is declare our move function in the fix **update function.**
+
+       private void FixedUpdate()
+       {
+        moveCharacter(movement);
+       }
+
+-Make sure the **PlayerObject** has been assigned to the **Enemy Script** in the Inspector. You will need to drag into the PlayerObject into the slot.  Once that is done, if we press play in Unity the enemy follows the PlayerObject when we drag it around. 
+ 
+ 
 
 
       
