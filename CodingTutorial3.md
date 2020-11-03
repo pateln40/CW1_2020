@@ -17,3 +17,9 @@
 
 
 - And now we need to reference the **rigid body** since that is the component for the player, for that we will need to create a **public rigid body** and name it **rb** for short. This will need under the **public float**. 
+
+- Save the script by pressing **CTRL** and **S** at the same time, and now you will see that the **player movement** has two variables, one for the speed and one that is a empty filed for the **rigid body**. The **speed** can be adjusted by entering a certain number, this will alter the movement speed for the player. 
+
+- In the empty field, we will **drag** the **rigid body** from the player under the **inspector** and slide into the empty box. This will link the componenet to the **player movement** which means we can move around the player. 
+
+- Back to the script, near the end of script under **void Update()** we will insert a function called **void fixUpdate()** This is excueted on a fixed timer and it is not stuck to the frame rate like **update** is which is realiable when we are working with **physics**. 
