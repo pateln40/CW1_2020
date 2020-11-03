@@ -7,7 +7,7 @@
 
 - Once the assets are inserted into the UnityProject, drag the assets into the **Hierarchy**. You will need to label one Enemy and one Player. Just right click on the asset in the Hierarchy and this will allow you to change the name of the asset. 
 
-![Screenshot (11)](https://user-images.githubusercontent.com/72073841/98046248-c69f1300-1e21-11eb-8a81-fee252880be3.png)
+ ![Screenshot (11)](https://user-images.githubusercontent.com/72073841/98046248-c69f1300-1e21-11eb-8a81-fee252880be3.png)
 
 
 - Once that is done, we will need to create a Script for the Enemy. Click on the Enemy, under the Inspector you will need to click on **Add Component**. Search Up New Script, which will enable you to add a script for the Enemy. Name the Script Enemy.
