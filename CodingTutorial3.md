@@ -22,4 +22,4 @@
 
 - In the empty field, we will **drag** the **rigid body** from the player under the **inspector** and slide into the empty box. This will link the componenet to the **player movement** which means we can move around the player. 
 
-- Back to the script, near the end of script under **void Update()** we will insert a function called **void fixUpdate()** This is excueted on a fixed timer and it is not stuck to the frame rate like **update** is which is realiable when we are working with **physics**. 
+- Back to the script, near the end of script under **void Update()** we will insert a function called **void fixUpdate()** This is execueted on a fixed timer and it is not stuck to the frame rate like **update** is which is realiable when we are working with **physics**. 
