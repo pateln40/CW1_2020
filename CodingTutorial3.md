@@ -7,7 +7,7 @@
 
 - Once that is done, we go to **add component** and create a **new script** for the player movement. Double click and this will lead you to visual studio. 
 
-- Into visual studio we need to remove the **start method**, instead will we add some **variables**. Now we need to define for the movement speed, for that we will write our first line of code. We will create a public float, with the speed of 5 for now. 
+- Into visual studio we need to remove the **start method**, instead will we add some **variables**. Now we need to define the movement speed, for that we will write our first line of code. We will create a public float, with the speed of 5 for now. 
 
 
       public class PlayerMovement : MonoBehaviour
