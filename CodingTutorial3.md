@@ -16,7 +16,7 @@
       public float moveSpeed = 5f;
 
 
-- And now we need to reference the **rigid body** since that is the component for the player, for that we will need to create a **public rigid body** and name it **rb** for short. This will need under the **public float**. 
+- And now we need to reference the **rigid body** since that is the component for the player, for that we will need to create a **public rigid body** and name it **rb** for short. This will be under **public float**. 
 
 - Save the script by pressing **CTRL** and **S** at the same time, and now you will see that the **player movement** has two variables, one for the speed and one that is a empty filed for the **rigid body**. The **speed** can be adjusted by entering a certain number, this will alter the movement speed for the player. 
 
