@@ -11,9 +11,9 @@
 
 - The first thing we want to do is calculate the **direction** our player is compared to our enemy object in order to do that we need to create a reference for our player object in the script. 
 
-- So for the top write public **Transform player**. Then in the update function which is executed every frame, we need to calculate the direction by writing **Vector3 direction = player.position - transform.position;**
+- So for the top write **public Transform player**. Then in the update function which is executed every frame, we need to calculate the direction by writing **Vector3 direction = player.position - transform.position;**
 
-- Make sure you add a **Rigidbody** to the Enemy, to do this you need to select the Enemy and under the Inspector, add a **Rigidbody 2D** component since this is 2D. 
+- Make sure you attach a **Rigidbody** to the Enemy, to do this you need to select the Enemy and under the Inspector, add a **Rigidbody 2D** component since this is 2D. 
 Back to the script, you will need to create a reference to the RigidBody 2D up at the top by writing **Private RigidBoody 2D rb.** 
 
 
