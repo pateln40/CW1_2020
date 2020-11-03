@@ -18,20 +18,23 @@ Back to the script, you will need to create a reference to the RigidBody 2D up a
 
 
 - In the start function, you will need to define the rb, this will allow you to manipulate the **movement** and **rotation** of our object.
-
-
-
+   
+   
+   
     void Start()
     {
+    
         rb = this.GetComponent<Rigidbody2D>();
     }
 
 
+
 - Then we need to do is rotate our object in the direction of our player. To do this first we need to convert our direction into degrees. For this we will use a math function called **Atan2**,  this means calculating the angle between our enemy object and the player object. 
 
-
-    void Update()
+void Update()
     {
+    
+    
         Vector3 direction = player.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
