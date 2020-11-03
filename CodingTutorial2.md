@@ -5,6 +5,7 @@
 -This will automatically create a canvas in Unity for the text field. To edit the text you will need to make sure you have selected Text, under the **Inspector** you can edit the **text colour**. 
 
 -Make sure to centre the text by editing the alignment to centre and increase the font size. 
+
 ![Screenshot (6)](https://user-images.githubusercontent.com/72073841/98047723-534ad080-1e24-11eb-9f4c-f154aeb02afb.png)
 
 -Create a script on the camera’s game object and name it countdown,  at the top of the script insert Unity Engine UI, this line is important because you will get an error when you try to change the text in the text box. 
