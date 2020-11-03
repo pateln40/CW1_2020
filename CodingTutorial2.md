@@ -46,4 +46,7 @@ Then we will create a new public text, labelling it  textbox which will hold our
  
 -In the **Inspector** we can see that the camera’s game object, make sure to **drag the textbox into the textbox field in the inspector**. This means the script can identify which text box to edit in the game scene. 
 
+![Screenshot (13)](https://user-images.githubusercontent.com/72073841/98047996-d53af980-1e24-11eb-856d-9ed114ae4a2e.png)
+
+
 -Press play and the textbox should change and the number decreases every second. 
