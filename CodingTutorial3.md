@@ -24,7 +24,7 @@
 
 - Back to the script, near the end of script under **void Update()** we will insert a function called **void fixUpdate()** This is execueted on a fixed timer and it is not stuck to the frame rate like **update** is which is realiable when we are working with **physics**. 
 
-- In the **void Update** we will insert this line of code.
+- In the **void Update** we will insert this line of code to get the horizontal and the vertical movement and we are storing this in the **vector2** called **movement**. You will need to insert this at the top section of the script. 
 
 
        // Update is called once per frame
@@ -35,5 +35,8 @@
        movement.y = Input.GetAxisRaw("Vertical"); 
 
        }
+       
+
+-
  
 
