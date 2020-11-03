@@ -2,6 +2,7 @@
 
 
 - For this tutorial we will need two assets for this project, one for the player and one for the enemy. To insert your assets you will need to click on Assets and click on **ImportNewAssets**. 
+![Screenshot (10)](https://user-images.githubusercontent.com/72073841/98045839-01ed1200-1e21-11eb-892e-4c5e9fad8b1c.png)
 
 - This will let you access your **folders** , from there you will need to select the assets you will need for this Tutorial. 
 
