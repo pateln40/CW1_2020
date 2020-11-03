@@ -8,6 +8,12 @@
 
 -Create a script on the camera’s game object and name it countdown,  at the top of the script insert Unity Engine UI, this line is important because you will get an error when you try to change the text in the text box. 
 
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+    using UnityEngine.UI;
+
+
 -Create a **public float called timeStart**, we use this to tell our timer how many seconds we like to count down, which is **currently 60**. 
 Then we will create a new public text, labelling it  textbox which will hold our textbox object.
 
