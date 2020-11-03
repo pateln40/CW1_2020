@@ -57,7 +57,8 @@ Now we know where the enemy will move, we will create a function called **moveCh
 
 
 
-    private void FixedUpdate()
+
+      private void FixedUpdate()
     {
         moveCharacter(movement);
     }
@@ -65,8 +66,7 @@ Now we know where the enemy will move, we will create a function called **moveCh
     {
         rb.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
     }
-
-
+}
 
 
 
