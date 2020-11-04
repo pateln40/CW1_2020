@@ -22,6 +22,9 @@
 
 - In the empty field, we will **drag** the **rigid body** from the player under the **inspector** and slide into the empty box. This will link the componenet to the **player movement** which means we can move around the player. 
 
+![Screenshot (14)](https://user-images.githubusercontent.com/72073841/98053782-4d0f2100-1e31-11eb-943f-0ce9956b857e.png)
+
+
 - Back to the script, near the end of script under **void Update()** we will insert a function called **void fixUpdate()** This is execueted on a fixed timer and it is not stuck to the frame rate like **update** is which is realiable when we are working with **physics**. 
 
 - In the **void Update** we will insert this line of code to get the horizontal and the vertical movement and we are storing this in the **vector2** called **movement**. You will need to insert this at the top section of the script. 
