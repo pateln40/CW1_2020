@@ -1,4 +1,4 @@
-# Player Movement
+# Top Down Player Movement
 
 
 - For this tutorial we will be creating a player movement that is top down, this means we will be creating movement for up, down, lef and right. To start of we will need to insert one asset for the player, to do this you will need to go to **assets** followed by **import assets** this will allow you to pick your image for your player in the scene. 
@@ -43,7 +43,7 @@
        }
        
 
-- In the **FixedUpdate()** we will need use the movement variable to move the **player**, to do this we will need to use the **rigid body**. 
+- In the **FixedUpdate()** we will need use the movement variable to move the **player**, to do this we will need to use the **rigid body**. The **rb.MovePosition** is a function that allows the **rigidbody** to move to a new position and makes sure it colldies with anything in the way. The position we want is the current **rb** plus **movement** to control the speed of the movement. 
  
       void FixedUpdate()
       {
