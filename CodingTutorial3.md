@@ -37,6 +37,13 @@
        }
        
 
--
+- In the **FixedUpdate()** we will need use the movement variable to move the **player**, to do this we will need to use the **rigid body**. 
  
+      void FixedUpdate()
+      {
+      rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+      }
+
+
+
 
