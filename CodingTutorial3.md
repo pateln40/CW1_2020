@@ -5,6 +5,9 @@
 
 - Once that is done we will drag the asset into the scene and name it **Player**. Under the **inspector** for the Player, we will add a **rigid body 2D** which will enable physics onto the object. Still under the inspector, we will adjust the **Gravity scale** to **0** so the player doesn't fall down and under **constraints** we will also freeze the rotation on the **Z** to make sure the player doesn't rotate. 
 
+![Screenshot (15)](https://user-images.githubusercontent.com/72073841/98053880-86479100-1e31-11eb-97df-5062dab9b243.png)
+
+
 - Once that is done, we go to **add component** and create a **new script** for the player movement. Double click and this will lead you to visual studio. 
 
 - Into visual studio we need to remove the **start method**, instead will we add some **variables**. Now we need to define the movement speed, for that we will write our first line of code. We will create a public float, with the speed of 5. 
