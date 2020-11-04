@@ -43,7 +43,7 @@
        }
        
 
-- In the **FixedUpdate()** we will need use the movement variable to move the **player**, to do this we will need to use the **rigid body**. The **rb.MovePosition** is a function that allows the **rigidbody** to move to a new position and makes sure it colldies with anything in the way. The position we want is the current **rb** plus **movement** to control the speed of the movement. 
+- In the **FixedUpdate()** we will need use the movement variable to move the **player**, to do this we will need to use the **rigid body**. The **rb.MovePosition** is a function that allows the **rigidbody** to move to a new position and makes sure it colldies with anything in the way. The position we want is the current **rb** plus **movement** to control the speed of the movement. **fixedDeltaTime** this variable will make sure the speed stays the same.
  
       void FixedUpdate()
       {
