@@ -1,6 +1,6 @@
 # Countdown
 
--This tutorial will tell you how to make a timer, to do this you will need to insert a text field. **Right click** under the Hierarchy you will see **UI** from there you will  need to **select Text**. 
+-This tutorial will tell you how to make a countdown timer, to do this you will need to insert a text field. **Right click** under the Hierarchy you will see **UI** from there you will  need to **select Text**. 
 
 -This will automatically create a canvas in Unity for the text field. To edit the text you will need to make sure you have selected Text, under the **Inspector** you can edit the **text colour**. 
 
