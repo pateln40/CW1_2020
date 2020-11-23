@@ -1,4 +1,4 @@
-# Timer 
+# Countdown
 
 -This tutorial will tell you how to make a timer, to do this you will need to insert a text field. **Right click** under the Hierarchy you will see **UI** from there you will  need to **select Text**. 
 
