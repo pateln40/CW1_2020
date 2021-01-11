@@ -1,6 +1,63 @@
 
 
-**9/09/2020**
+**29/09/2020**
+
+
+
+
+
+
+
+
+
+
+
+**16/11/2020**
+  
+  First time creating 3D animation in Unity for a game, I needed my character to move up down, left, right and down. Struggled to get the animation to move with the animations smoothly. The character would move in all directions but it would bounce back to the orginal postion which is unnatural. I finally fixed the issue and now the player moves without bouncing back and the animations seems to work well. 
+  
+  
+  
+  void Start()
+    {
+        myAnimator = GetComponent<Animator>();
+       
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey("w") || Input.GetKey ("s") || Input.GetKey ("a") || Input.GetKey ("d"))
+        {
+            myAnimator.SetBool("istheplayermoving", true);
+        }
+        else
+        if (!Input.GetKey("w") || Input.GetKey ("s") || Input.GetKey ("a") || Input.GetKey ("d"))
+        {
+            myAnimator.SetBool("istheplayermoving", false);
+        }
+        
+
+    }
+
+   
+The code for the player to move in all diresctions. 
+
+      float moveX = Input.GetAxis("Horizontal");
+        float moveZ = Input.GetAxis("Vertical");
+
+        if (moveX != 0 || moveZ != 0)
+        {
+            modelTransform.rotation = Quaternion.LookRotation(new Vector3(moveX, 0f, moveZ));
+
+        }
+
+    Vector3 movement = new Vector3(moveX, 0f, moveZ);
+        GetComponent<Rigidbody>().velocity = movement * moveSpeed * Time.deltaTime;
+        }
+
+
+**9/11/2020**
 
 There was an issue with one of the scripts when the player collected the honey, the UI wouldn’t go down to 0 instead it would stay at 1. The UI should’ve countdown from 5 to 0, which would show how many collectables they had left. This is waht the script was like before.
 
@@ -8,22 +65,22 @@ There was an issue with one of the scripts when the player collected the honey, 
     {
         if (cur_coins > 0)
         {
-            coinsLeft.text = "Honey    " + cur_coins.ToString ("D");
+            coinsLeft.text = "Honey" + cur_coins.ToString ("D");
             
             
 It was something I couldn’t ignore because the player wouldn’t know if they collected all  objects in the maze.
-It took a couple of hours to think of why it wouldn’t work since the script looked fine, however I realised that I missed a couple of lines of code.  And this finally made the UI Countdown to 0 and trigger the door. 
+It took a couple of hours to think of why it wouldn’t work since the script looked fine, however I realised that I missed a couple of lines of code.  And this finally made the UI Countdown to 0 and trigger the door. Small error but I realised it and it made sense why the UI wasn't counting down properly.
 
   
     public void UpdateUI() 
     {
         if (cur_coins > 0)
         {
-            coinsLeft.text = "Honey    " + cur_coins.ToString ("D");
+            coinsLeft.text = "Honey" + cur_coins.ToString ("D");
 
         }
         else if (cur_coins <= 0) {
-            coinsLeft.text = "Honey    " + cur_coins.ToString ("D");
+            coinsLeft.text = "Honey" + cur_coins.ToString ("D");
             Door.SetActive (true);
         }
 
