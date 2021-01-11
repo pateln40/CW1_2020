@@ -1,6 +1,7 @@
 
 
 **9/09/2020**
+
 There was an issue with one of the scripts when the player collected the honey, the UI wouldn’t go down to 0 instead it would stay at 1. The UI should’ve countdown from 5 to 0, which would show how many collectables they had left. This is waht the script was like before.
 
     public void UpdateUI() 
