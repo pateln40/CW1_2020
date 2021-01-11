@@ -14,7 +14,7 @@
 
 **16/11/2020**
   
-  First time creating 3D animation in Unity for a game, I needed my character to move up down, left, right and down. Struggled to get the animation to move with the animations smoothly. The character would move in all directions but it would bounce back to the orginal postion which is unnatural. I finally fixed the issue and now the player moves without bouncing back and the animations seems to work well. 
+  First time creating 3D animation in Unity for a game, I needed my character to move up down, left, right and down. Struggled to get the animation to move with the animations smoothly. The character would move in all directions but it would bounce back to the original position which is unnatural. I finally fixed the issue and now the player moves without bouncing back and the animations seems to work well. 
   
   
   
