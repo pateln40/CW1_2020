@@ -41,7 +41,7 @@
     }
 
    
-The code for the player to move in all diresctions. 
+The code for the player to move in all directions. 
 
       float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
