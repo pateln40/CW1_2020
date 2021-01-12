@@ -8,7 +8,7 @@
 **03/10/2020**
 
 
-I attemped to make AI for my game, this involved using the **NevMeshAgent** and **Baking** function . This allows the AI to move around the map that is walkable, and the walls that isn't walkable, since my game is in a maze the AI needs to move around the map without it bumping into the walls, I also made the AI to move at certain points as well so that it can move in a certain area rather than the whole map, since I plan to make more than one AI in my scene.
+I attemped to make AI for my game, this involved using the **NevMeshAgent** and **Baking** function . This allows the AI to move around the map that is walkable, and the walls that isn't walkable, since my game is in a maze the AI needs to move around the map without it bumping into the walls, I also made the AI to move at certain points as well so that it can move in a certain area rather than the whole map, since I plan to make more than one AI in my scene. I did have some issues with the waypoints, the AI wouldn't face in the right direction, but I just redid the waypoints and it worked. 
 
 
 
@@ -91,7 +91,30 @@ I gave up and returned the next day to think of why it wouldn’t work since the
             Door.SetActive (true);
         }
 
-    
+**20/11/2020** 
+Created a script to trigger an image when the player goes near an object (collider), it was meant to be a board sign for the player to read the instructions of the game. A simple code but I made a small mistake again, I spelt 'enabled' wrong, took me a while to find it but I got there in the end. 
+
+{
+    [SerializeField] private RawImage customImage;
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            customImage.enabled = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            customImage.enabled = false;
+        }
+    }
+
+
+
 
 
 
