@@ -21,8 +21,8 @@ I attemped to make AI for my game, this involved using the **NevMeshAgent** and 
   
   
   
-  void Start()
-    {
+     void Start()
+     {
         myAnimator = GetComponent<Animator>();
        
     }
