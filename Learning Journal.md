@@ -40,8 +40,12 @@ I attemped to make AI for my game, this involved using the **NevMeshAgent** and 
 
     }
 
+
+
+   **17/11/2020**
    
-The code for the player model to rotate in all directions. 
+   
+Attemtped this the next day and made the code for the player model to rotate in all directions. 
 
       float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
