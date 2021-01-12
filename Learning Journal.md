@@ -5,7 +5,8 @@
 
 
 
-
+**03/10/2020**
+I attemped to make AI for my game, this involved using the **NevMeshAgent** and **Baking** function . This allows the AI to move around the map that is walkable, and the walls that isn't walkable, since my game is in a maze the AI needs to move around the map without it bumping into the walls, I also made the AI to move at certain points as well so that it can move in a certain area rather than the whole map, since I plan to make more than one AI in my scene.
 
 
 
