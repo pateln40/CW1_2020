@@ -96,8 +96,8 @@ I gave up and returned the next day to think of why it wouldn’t work since the
 
 Created a script to trigger an image when the player goes near an object (collider), it was meant to be a board sign for the player to read the instructions of the game. A simple code but I made a small mistake again, I spelt 'enabled' wrong, took me a while to find it but I got there in the end. 
 
-{
-    [SerializeField] private RawImage customImage;
+    {
+     [SerializeField] private RawImage customImage;
 
     void OnTriggerEnter(Collider other)
     {
