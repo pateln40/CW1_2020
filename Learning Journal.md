@@ -14,7 +14,7 @@ I attemped to make AI for my game, this involved using the **NevMeshAgent** and 
   
   First time creating 3D animation in Unity for a game, I needed my character to move up down, left, right and down with animation. Used **Animator.SetBool** to trigger certain animations for the player- from idle to walk and vice versa. 
   
-  I struggled to get the animations to move smoothly, the character would move in all directions but it would bounce back to the original position which is unnatural. I finally fixed the issue and now the player moves without bouncing back and the animations seems to work well. 
+  I struggled to get the animations to move smoothly, the character would move in all directions but it would bounce back to the original position which is unnatural. 
   
   
   
@@ -45,7 +45,7 @@ I attemped to make AI for my game, this involved using the **NevMeshAgent** and 
    **17/11/2020**
    
    
-Attempted this the next day and made the code for the player model to rotate in all directions. 
+Attempted this the next day and made the code for the player model to rotate in all directions. And I finally fixed the issue and now the player moves without bouncing back and the animations seems to work well. 
 
       float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
